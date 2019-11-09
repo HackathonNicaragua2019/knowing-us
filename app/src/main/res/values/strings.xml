@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">KnowinguS</string>
+
+    //lennox
+    <string name="btn_cerrar">cerrrar secion</string>
 </resources>
