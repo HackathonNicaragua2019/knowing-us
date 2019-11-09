@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseUser currentUser = mAuth.getCurrentUser();
         updateUI(currentUser);
 
+
     }
 
     private void registrar(){
@@ -157,6 +158,15 @@ public class MainActivity extends AppCompatActivity {
             Uri personPhoto = account.getPhotoUrl();
 
             Toast.makeText(MainActivity.this,personName + personEmail ,Toast.LENGTH_SHORT).show();
+
+            //llamaar a la actividad principal
+
+            Intent intent = new Intent(this, InicioActivity.class);
+
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+
+
         }
 
     }
