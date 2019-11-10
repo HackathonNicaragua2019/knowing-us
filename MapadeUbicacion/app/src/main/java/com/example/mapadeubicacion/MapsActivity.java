@@ -40,9 +40,11 @@ import java.util.Map;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     private GoogleMap mMap;
+
     private Marker currentLocationMaker;
     private LatLng currentLocationLatLong;
     private DatabaseReference mDatabase;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +57,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         startGettingLocations();
         mDatabase = FirebaseDatabase.getInstance().getReference();
         getMarkers();
-
 
     }
 
@@ -74,17 +75,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng leon = new LatLng(12.143382, -86.274075);
-        mMap.addMarker(new MarkerOptions().position(leon).title("Leon,Nicaragua"));
-        CameraPosition cameraPosition = new CameraPosition.Builder().zoom(15).target(leon).build();
+        LatLng recife = new LatLng(12.431811, -86.874354);
+        mMap.addMarker(new MarkerOptions().position(recife).title("Marcador"));
+
+        CameraPosition cameraPosition = new CameraPosition.Builder().zoom(15).target(recife).build();
+
 
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-        //LocationData locationData = new LocationData(location.getLatitude(), location.getLongitude());
-        //mDatabase.child("location").child(String.valueOf(new Date().getTime())).setValue(locationData);
-
-        Toast.makeText(this, "Localização atualizada", Toast.LENGTH_SHORT).show();
-        getMarkers();
-
     }
 
     @Override
@@ -110,7 +107,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Toast.makeText(this, "Localização atualizada", Toast.LENGTH_SHORT).show();
         getMarkers();
+
     }
+
 
 
     private ArrayList findUnAskedPermissions(ArrayList<String> wanted) {
@@ -200,7 +199,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
                         != PackageManager.PERMISSION_GRANTED) {
 
-            Toast.makeText(this, "permiso negado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Permissão negada", Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -222,7 +221,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         } else {
-            Toast.makeText(this, "no es posible optener localizacion", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "No se possível obterner la localizaçion", Toast.LENGTH_SHORT).show();
         }
     }
 
