@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         "muchas de ellas son realmente interesantes, ya sea por su historia –la más" +
                         " antigua es la de Sutiava- o por su aquitectura que va del barroco al neoclásico."));
 
-        listItems.add(new Lugares(R.drawable.leonviejo, "Quiere conocer mas sobre la Historia de León ve a León viejo ",
+        listItems.add(new Lugares(R.drawable.leonviejo, "Quiere conocer mas sobre la Historia de León visita  León viejo ",
                 "La antigua –y original- ciudad de León, fundada en 1524 por Francisco Hernández de Córdoba quedó " +
                         "destrozada por terremotos y por la erupción del volcán Momotombo. En ese momento se decidió traslada " +
                         "la ciudad a donde se encuentra hoy.\n" +
