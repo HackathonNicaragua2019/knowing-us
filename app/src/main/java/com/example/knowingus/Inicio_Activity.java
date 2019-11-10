@@ -33,6 +33,8 @@ public class Inicio_Activity extends AppCompatActivity {
             }
             if(menuItem.getItemId() == R.id.navigation_notifications){
 
+             //   Intent intent = new Intent(Inicio_Activity.this, Clima.class);
+               // startActivity(intent);
             }
             if(menuItem.getItemId() == R.id.navigation_perfil){
 

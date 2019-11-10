@@ -8,5 +8,6 @@
     <string name="title_map">mapas</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_perfil">cuenta</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
