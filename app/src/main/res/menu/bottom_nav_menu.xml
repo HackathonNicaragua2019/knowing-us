@@ -17,7 +17,9 @@
         android:title="@string/title_notifications" />
     <item
         android:id="@+id/navigation_perfil"
-        android:icon="@mipmap/ic_perfil"
-        android:title="@string/title_perfil" />
+        android:icon="@mipmap/ic_cuenta"
+        android:title="@string/title_perfil"
+        />
+
 
 </menu>
