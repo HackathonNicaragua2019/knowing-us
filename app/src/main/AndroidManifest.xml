@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.knowingus">
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +9,8 @@
         android:roundIcon="@mipmap/ic_icono"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".InicioActivity"
-            android:label="@string/title_activity_inicio"></activity>
+        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".Inicio_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
