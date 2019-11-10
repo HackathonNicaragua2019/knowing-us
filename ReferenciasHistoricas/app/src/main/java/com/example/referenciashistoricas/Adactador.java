@@ -44,6 +44,8 @@ public class Adactador extends BaseAdapter {
         ivTitulo.setText(Item.getTitulo());
         ivContenido.setText(Item.getContenido());
 
+
+
         return convertView;
     }
 }
