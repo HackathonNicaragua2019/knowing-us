@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateUI(FirebaseUser fUser){
         GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(getApplicationContext());
         if(account !=  null){
-          //  clasesecion.account = account;
+            ClassPerfil.account = account;
             botoncerrrar.setVisibility(View.VISIBLE);
             String personName = account.getDisplayName();
             String personGivenName = account.getGivenName();
