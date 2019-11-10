@@ -1,9 +1,12 @@
 package com.example.knowingus;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -14,6 +17,7 @@ public class InicioActivity extends AppCompatActivity {
 
     //boton de navegacion
     BottomNavigationView mBottomNavigationView;
+    Menu btnmenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +34,18 @@ public class InicioActivity extends AppCompatActivity {
 
 
 
+
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate();
+        return super.onCreateOptionsMenu(menu);
+    }
 
-
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
 }
